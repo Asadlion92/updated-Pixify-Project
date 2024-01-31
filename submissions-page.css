@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    background-color: #2A3B49;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav button {
+    width: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #7BFFE9;
+    font-size: 16px;
+}
+
+/*This is the new header during mobile settings once the hamburger icon is clicked*/
+.mobile-header {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+/*This is the new menu during mobile settings once the hamburger icon is clicked*/
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.browser-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+/*Hides Light Mode Button*/
+#lightMode {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.logo {
+    font-size: 36px;
+    color: #7BFFE9;
+}
+
+nav a{
+    font-size: 16px;
+}
+
+.details {
+    display: flex;
+    width: 339px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+img {
+    width: 345px;
+    border-radius: 8px;
+}
+
+.details a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.submissions-panel {
+    width: 60%;
+}
+
+.submissions-panel h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.cover-pics-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    min-height: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 608px;
+    background-color: #2A3B49;
+    border: solid 1px black;
+    width: 481px;
+    border-radius: 8px;
+}
+
+input {
+    height: 40px;
+    width: 360px;
+    border-radius: 8px;
+    border: none;
+}
+
+::placeholder {
+    padding-left: 10px;
+    color: #D9D9D9;
+}
+
+form button {
+    height: 61px;
+    width: 190.47px;
+    border: 2px solid #7BFFE9;
+    border-radius: 60px;
+    background-color: transparent;
+    color: #7BFFE9;
+    cursor: pointer;
+}
+
+form h2 {
+    color: white;
+}
+
+main {
+    display: flex;
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .browser-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+}

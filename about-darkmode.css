@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    background-color: #2A3B49;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav button {
+    width: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #7BFFE9;
+    font-size: 16px;
+}
+
+/*This is the new header during mobile settings once the hamburger icon is clicked*/
+.mobile-header {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+/*This is the new menu during mobile settings once the hamburger icon is clicked*/
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.browser-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.logo {
+    font-size: 36px;
+    color: #7BFFE9;
+}
+
+nav a{
+    font-size: 16px;
+}
+
+.upper-content-container h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+.upper-content-container p {
+    text-align: center;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.lower-content-container {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.column-one {
+    width: 60%;
+}
+
+.column-one a{
+    text-decoration: none;
+    color: #7BFFE9;
+    font-size: 36px;
+    border: 2px solid #7BFFE9;
+    background-color: #2A3B49;
+    padding: 40px 80px;
+    border-radius: 60px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    width: 445px;
+    border-radius: 10px;
+}
+
+main {
+    padding: 0 40px;
+    background-color: #2A3B49;
+}
+
+/*Activates Light Mode Button*/
+#lightMode {
+    display: block;
+}
+
+/*Hides Dark Mode Button*/
+#darkMode {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .browser-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        text-align: center;
+    }
+
+    .lower-content-container {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .column-one {
+        width: 100%;
+    }
+
+    .column-one a{
+        text-decoration: none;
+        color: #7BFFE9;
+        font-size: 24px;
+        border: 2px solid #7BFFE9;
+        background-color: #2A3B49;
+        padding: 30px 40px;
+        border-radius: 60px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/wild-animals-detail-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Pixify Project</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">PIXIFY</a>
+        <nav class="browser-menu">
+            <a href="/submissions-page.html">2023 Submissions</a>
+            <a href="/about.html">About</a>
+            <button onclick="darkMode()" id="darkMode">Dark Mode</button>
+            <button onclick="lightMode()" id="lightMode">Light Mode</button>
+        </nav>
+        <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+    </header>
+    <main>
+        <h1>WILD ANIMALS</h1>
+        <p>Mark Dale</p>
+        <img src="/wild-animals-cover-pic.png" alt="wild-animals-cover-pic">
+        <p id="changePage">1 of 5</p>
+        <div class="btns-container">
+            <button onclick="prevBtn()">Previous</button>
+            <button onclick="nextBtn()">Next</button>
+        </div>
+    </main>
+    <script src="/wild-animals-detail-page.js"></script>
+    <script src="https://kit.fontawesome.com/1bc6bf2f3d.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/submissions-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Pixify Project</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">PIXIFY</a>
+        <nav class="browser-menu">
+            <a href="/submissions-page.html">2023 Submissions</a>
+            <a href="/about.html">About</a>
+            <button onclick="darkMode()" id="darkMode">Dark Mode</button>
+            <button onclick="lightMode()" id="lightMode">Light Mode</button>
+        </nav>
+        <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+    </header>
+    <main>
+        <div class="submissions-panel">
+            <h1>2023 SUBMISSIONS</h1>
+            <div class="cover-pics-container">
+                <div class="cover-pic">
+                    <img src="/nature-adventures-cover-pic.png">
+                    <div class="details">
+                        <p>Nature Adventures - Jane Doe</p>
+                        <a href="/nature-adventures-detail-page.html">see more</a>
+                    </div>
+                </div>
+                <div class="cover-pic">
+                    <img src="/faces-of-the-world-cover-pic.png">
+                    <div class="details">
+                        <p>Faces of the World - Irna Tawsen</p>
+                        <a href="/faces-of-the-world-detail-page.html">see more</a>
+                    </div>
+                </div>
+                <div class="cover-pic">
+                    <img src="/wild-animals-cover-pic.png">
+                    <div class="details">
+                        <p>Wild Animals - Mark Dale</p>
+                        <a href="/wild-animals-detail-page.html">see more</a>
+                    </div>
+                </div>
+                <div class="cover-pic">
+                    <img src="/innocence-cover-pic.png">
+                    <div class="details">
+                        <p>Innocence - Andrew Smith</p>
+                        <a href="/innocence-detail-page.html">see more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="">
+            <h2>SUBMIT YOUR WORK</h2>
+            <input type="text" name="name" placeholder="Your Name"/>
+            <input type="text" name="title" placeholder="Title of Your Entry"/>
+            <input type="text" name="imgUrlOne" placeholder="Image Url One"/>
+            <input type="text" name="imgUrlTwo" placeholder="Image Url Two"/>
+            <input type="text" name="imgUrlThree" placeholder="Image Url Three"/>
+            <input type="text" name="imgUrlFour" placeholder="Image Url Four"/>
+            <input type="text" name="imgUrlFive" placeholder="Image Url Five"/>
+            <button id="submitBtn">SUBMIT</button>
+        </form>
+    </main>
+    <script src="/submissions-page.js"></script>
+    <script src="https://kit.fontawesome.com/1bc6bf2f3d.js" crossorigin="anonymous"></script>
+</body>
+</html>

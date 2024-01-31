@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    background-color: #2A3B49;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+/*This is the new header during mobile settings once the hamburger icon is clicked*/
+.mobile-header {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+/*This is the new menu during mobile settings once the hamburger icon is clicked*/
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.browser-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.logo {
+    font-size: 36px;
+    color: #7BFFE9;
+}
+
+nav a{
+    font-size: 16px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+main {
+    background-image: url("/homepage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main p {
+    background-color: #2A3B49;
+    color: white;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    border-radius: 150px 150px 150px 0;
+    text-decoration: none;
+}
+
+main a {
+    text-decoration: none;
+    color: #7BFFE9;
+    background-color: transparent;
+    font-size: 36px;
+    padding: 40px;
+    border: 2px solid #7BFFE9;
+    border-radius: 60px;
+}
+
+@media (max-width: 768px) {
+
+    .browser-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    main p {
+        font-size: 20px;
+        height: auto;
+        border-radius: 150px;
+    }
+
+    main a {
+        font-size: 24px;
+    }
+}
